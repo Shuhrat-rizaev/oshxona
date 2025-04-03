@@ -1,10 +1,10 @@
 import { Button } from "antd";
-import { Drinks } from "../../constants";
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
-
+import { useState } from "react";
+import { drinks } from "../../constants";
 const Drinks = () => {
-  const [Drinks, setDrinks] = useState(
-    Drinks.map((item) => ({ ...item, count: 0 }))
+  const [drinks, setDrinks] = useState(
+    drinks.map((item) => ({ ...item, count: 0 }))
   );
 
   const incr = (i) => {
@@ -27,7 +27,7 @@ const Drinks = () => {
 
   return (
     <div className="grid grid-cols-4 gap-3">
-      {Drinks.map((item, i) => (
+      {drinks.map((item, i) => (
         <div key={i} className="rounded-lg shadow-2xl p-3">
           <img
             src={item.image} // TO'G'RILANDI
