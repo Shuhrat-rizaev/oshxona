@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import Login from "./pages/Login/Login.jsx";
 import Root from "./pages/girgitton/Root.jsx";
-// import { Menu } from "antd";s
+// import { Menu } from "antd";
 import Menu from "./pages/girgitton/Menu.jsx";
 
 createRoot(document.getElementById("root")).render(

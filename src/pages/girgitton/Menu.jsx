@@ -2,9 +2,8 @@ import { useParams } from "react-router-dom";
 import img from "../../assets/images/images.png";
 import { Tabs } from "antd";
 import Meals from "./Meals";
-
-import Drinks from "./drinks";
-import Salat from "./salat";
+import Drinks from "./Drinks";
+import Salat from "./Salat";
 
 const Menu = () => {
   const item = [

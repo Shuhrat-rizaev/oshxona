@@ -1,15 +1,14 @@
-import React, { useState } from "react";
 import { Button } from "antd";
-import { drinks } from "../../constants";
+import { Drinks } from "../../constants";
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 
 const Drinks = () => {
-  const [mealsList, setMealsList] = useState(
-    drinks.map((item) => ({ ...item, count: 0 }))
+  const [Drinks, setDrinks] = useState(
+    Drinks.map((item) => ({ ...item, count: 0 }))
   );
 
   const incr = (i) => {
-    setMealsList((prevList) =>
+    setDrinks((prevList) =>
       prevList.map((item, index) =>
         index === i ? { ...item, count: item.count + 1 } : item
       )
@@ -17,7 +16,7 @@ const Drinks = () => {
   };
 
   const decr = (i) => {
-    setMealsList((prevList) =>
+    setDrinks((prevList) =>
       prevList.map((item, index) =>
         index === i && item.count > 0
           ? { ...item, count: item.count - 1 }
@@ -28,7 +27,7 @@ const Drinks = () => {
 
   return (
     <div className="grid grid-cols-4 gap-3">
-      {mealsList.map((item, i) => (
+      {Drinks.map((item, i) => (
         <div key={i} className="rounded-lg shadow-2xl p-3">
           <img
             src={item.image} // TO'G'RILANDI

@@ -4,7 +4,7 @@ import { Button } from "antd";
 import { MinusOutlined, PlusOutlined } from "@ant-design/icons";
 const Salat = () => {
   const [mealsList, setMealsList] = useState(
-    salat.map((item) => ({ ...item, count: 0 }))
+    mealsList.map((item) => ({ ...item, count: 0 }))
   );
 
   const incr = (i) => {
