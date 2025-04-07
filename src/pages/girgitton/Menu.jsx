@@ -2,8 +2,6 @@ import { useParams } from "react-router-dom";
 import img from "../../assets/images/images.png";
 import { Tabs } from "antd";
 import Meals from "./Meals";
-import Drinks from "./Drinks";
-import Salat from "./Salat";
 
 const Menu = () => {
   const item = [
@@ -11,16 +9,6 @@ const Menu = () => {
       key: "1",
       label: "ovqatlar",
       children: <Meals />,
-    },
-    {
-      key: "2",
-      label: "ichimliklar",
-      children: <Drinks />,
-    },
-    {
-      key: "3",
-      label: "Salatlar",
-      children: <Salat />,
     },
   ];
 
@@ -30,7 +18,7 @@ const Menu = () => {
     <div className="container mx-auto w-[85%]">
       <span className="flex gap-3 items-center">
         <img src={img} alt="" className="w-20 h-20" />
-        <span className=" text-2xl font-semibold">{params.id}</span>
+        <span className=" text-2xl font-semibold">{params.client_id}</span>
       </span>
       <Tabs items={item} />
     </div>

@@ -115,7 +115,7 @@ export const meal = [
     price: 40000,
   },
 ];
-export const drinks = [
+export const drink = [
   {
     name: "Coco-Cola",
     categary: "drinks",

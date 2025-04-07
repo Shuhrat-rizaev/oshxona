@@ -1,4 +1,5 @@
 import { Navigate, Outlet } from "react-router-dom";
+import Navbar from "./companents/Navbar";
 
 function App() {
   let isAuth = localStorage.getItem("isAuth");
@@ -7,6 +8,7 @@ function App() {
   if (!!isAuth) {
     return (
       <div>
+        <Navbar />
         <Outlet />
       </div>
     );

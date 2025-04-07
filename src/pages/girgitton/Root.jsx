@@ -8,9 +8,10 @@ const Root = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 gap-5 ">
         {clints.map((item) => {
           return (
-            <div key={item.key}>
+            <div key={item.key} className="text-center">
               <Link to={`/clints/${item.key}`}>
                 <Image src={img} className="w-full h-[300px]" />
+                <p className="text-xl font-bold mt-2">Stol №{item.key}</p>
               </Link>
             </div>
           );
